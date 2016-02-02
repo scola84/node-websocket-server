@@ -1,0 +1,34 @@
+{
+  "name": "@scola/websocket-server",
+  "version": "1.0.0",
+  "description": "WebSocket Server",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scola84/node-websocket-server.git"
+  },
+  "author": "M.C. van den Boogaart <scola@kvdb.name>",
+  "license": "MIT",
+  "main": "index.js",
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            "es2015"
+          ]
+        }
+      ]
+    ]
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.3.13",
+    "babelify": "^7.2.0"
+  },
+  "dependencies": {
+    "@scola/di": "^2.0.0",
+    "@scola/websocket": "^1.0.0",
+    "@scola/websocket-helper": "^1.0.0",
+    "ws": "^1.0.1"
+  }
+}
