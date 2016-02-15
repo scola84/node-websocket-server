@@ -1,6 +1,6 @@
 {
   "name": "@scola/websocket-server",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "WebSocket Server",
   "repository": {
     "type": "git",
