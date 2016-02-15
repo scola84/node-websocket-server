@@ -19,8 +19,7 @@ class Module extends DI.Module {
 
     this.inject(Connection).with(
       this.singleton(Helper.Pool),
-      this.provider(Helper.Message),
-      this.array([])
+      this.provider(Helper.Message)
     );
 
     this.inject(Connector).with(
@@ -44,6 +43,7 @@ class Module extends DI.Module {
 module.exports = {
   Connection,
   Connector,
+  Helper,
   Module,
   Socket: {
     Pub,
